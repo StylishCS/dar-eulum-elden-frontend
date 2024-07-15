@@ -83,19 +83,19 @@ export default function Analytics() {
             } />
         </div>
         <div className="flex-1 min-w-[300px]">
-          <StatisticsCard title="Books Stock" value={analytics.bookStock[0].totalStock} footer={
+          <StatisticsCard title="Books Stock" value={analytics.bookStock[0]?.totalStock} footer={
             <Typography className="font-normal text-blue-gray-600">
                 {
-                  analytics.bookStock[0].totalStock < 1000 ? <strong className={"text-red-500"}>Restock As Soon As Possible</strong> : <strong className={"text-green-500"}>All Good!</strong>
+                  analytics.bookStock[0]?.totalStock < 1000 ? <strong className={"text-red-500"}>Restock As Soon As Possible</strong> : <strong className={"text-green-500"}>All Good!</strong>
                 }
               </Typography>
           } />
         </div>
         <div className="flex-1 min-w-[300px]">
-          <StatisticsCard title="Quran Stock" value={analytics.quranStock[0].totalStock} footer={
+          <StatisticsCard title="Quran Stock" value={analytics.quranStock[0]?.totalStock} footer={
             <Typography className="font-normal text-blue-gray-600">
                 {
-                  analytics.quranStock[0].totalStock < 100 ? <strong className={"text-red-500"}>Restock As Soon As Possible</strong> : <strong className={"text-green-500"}>All Good!</strong>
+                  analytics.quranStock[0]?.totalStock < 100 ? <strong className={"text-red-500"}>Restock As Soon As Possible</strong> : <strong className={"text-green-500"}>All Good!</strong>
                 }
               </Typography>
           } />
