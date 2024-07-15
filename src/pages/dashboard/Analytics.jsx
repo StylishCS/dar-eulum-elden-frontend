@@ -110,7 +110,7 @@ export default function Analytics() {
           <BarChart values = {analytics.weeklyProfits} />
         </div>
         <div className="flex-1 min-w-[300px]">
-          <PieChart values = {[analytics.bookSellings[0].totalSellings, analytics.quranSellings[0].totalSellings]}/>
+          <PieChart values = {[analytics.bookSellings[0]?.totalSellings, analytics.quranSellings[0]?.totalSellings]}/>
         </div>
       </div>
 
